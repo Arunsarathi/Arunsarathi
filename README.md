@@ -2,7 +2,7 @@
      then paste this at the very top of README.md -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
+  <!-- <source media="(prefers-color-scheme: dark)" srcset="./dark.svg"> -->
   <source media="(prefers-color-scheme: light)" srcset="./light.svg">
   <img alt="Arun — AI/ML Engineer" src="./light.svg" width="100%">
 </picture>
