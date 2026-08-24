@@ -1,18 +1,29 @@
-<!-- Profile Header with Animated SVG -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&center=true&vCenter=true&color=36BCF7&width=800&lines=👋+Hi%2C+I'm+Arun+Sarathi;Power+Electronics+%7C+Generative+AI+Engineer;Building+LLM-powered+Intelligent+Systems" alt="Typing SVG" />
-</p>
+<!-- Drop dark.svg and light.svg in the repo root of <your-username>/<your-username>,
+     then paste this at the very top of README.md -->
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./light.svg">
+  <img alt="Arun — AI/ML Engineer" src="./light.svg" width="100%">
+</picture>
 
-### 🚀 About Me
+<!--
+Notes
+-----
+* GitHub renders SVG through <img>, so SMIL animations (the reveal wipe,
+  scanline, blinking LIVE dot and cursor) all play. CSS and JS would not.
+* Edit INFO / STACK in the PROFILE block at the top of banner_generator.py
+  and re-run to regenerate both themes:
 
-🧠 Multidisciplinary engineer with **5+ years** of experience blending hardware engineering and AI innovation. I specialize in:
-- ⚡ Power Electronics: DC-DC converters, SMPS, EV chargers
-- 🤖 Generative AI: LLMs, Vector DBs, RAG systems
-- ☁️ Cloud Deployments: AWS Bedrock, GCP Vertex AI
+      pip install opencv-python-headless numpy
+      python banner_generator.py headshot.png
 
----
+* Tuning knobs in banner_generator.py:
+      COLS, ROWS   -> halftone resolution (higher = finer dots, bigger file)
+      1.32 / 1.06  -> contrast / gamma in portrait_runs()
+      0.86         -> dot size as a fraction of the cell in portrait_svg()
+      THEMES       -> colour palettes for dark and light
+-->
 
 ### 🛠️ Tech Stack
 
